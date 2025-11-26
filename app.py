@@ -5,9 +5,10 @@ import textwrap
 from telebot import types
 
 # Bot tokeningizni shu yerga qo'ying
+
 TOKEN = "8563036644:AAEG4I5mCwIdBOdIJ1q5ebcsmToFLSNO94w"
 bot = telebot.TeleBot(TOKEN)
-
+bot.remove_webhook()
 # O'yinlar uchun HTML shablonlari
 TEMPLATES = {
     "snake": textwrap.dedent("""\
